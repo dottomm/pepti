@@ -19,6 +19,12 @@
   nav{
     display: block;
   }
+  .img-box{
+    width:1100px;
+    height:400px;
+    background-image: url('../images/white-pepti-logo.png'); 
+    background-size: cover;
+  }
   h1{
     font-size: 1.6em;
     color: var(--color-blue);

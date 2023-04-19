@@ -13,6 +13,12 @@
   line-height: 1.9;
   padding: 0 10px
   }
+  .img-box{
+    width:800px;
+    height:400px;
+    background-image: url('../images/white-pepti-logo.png'); 
+    background-size: cover;
+  }
   
   h1{
     color: var(--color-blue);

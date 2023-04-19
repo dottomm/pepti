@@ -21,6 +21,14 @@
   padding: 0 10px
   }
   
+  .img-box{
+    display:flex;
+    justify-content: space-between;
+    width:880px;
+    height:400px;
+    background-image: url('../images/pepti-logo.png'); 
+    background-size: cover;
+  }
   h1{
     font-family: Montserrat;
 }
