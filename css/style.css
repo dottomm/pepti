@@ -1,0 +1,55 @@
+body {
+    background-color: #ffddb3;
+    color: #333333;
+    margin: 40px
+auto;
+max-width: 650px;
+line-height: 1.6;
+font-size: 18px;
+color: #444;
+padding: 0
+10px
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Josefin Slab;
+    src: url('../fonts/Josefin_Slab/JosefinSlab-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Maitree;
+    src: url('../fonts/Maitree/Maitree-Regular.ttf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #f39c12;
+line-height: 1.2
+
+}
+h1{
+    font-family: Montserrat;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Josefin Slab';
+}
+
+p{
+    font-family: Maitree;
+}
+
+a {
+    color: #a8dadc;
+    text-decoration: none;
+    border-bottom: 2px solid #a8dadc;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #f39c12;
+    border-bottom: 2px solid #f39c12;
+}       
