@@ -1,26 +1,32 @@
 :root {
     --color-green: #D3D26A;
     --color-blue: #AEDDEC;
-    --color-white: #FCFCFC;
+    --color-white: #fff;
     
   }
   
   /* Use the colors in your CSS */
-  body {
+  body *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--color-white);
   margin: 40px auto;
-  max-width: 880px;
-  line-height: 1.9;
+  line-height: 1.6;
+
   padding: 0 10px
   }
-  
+  nav{
+    display: block;
+  }
   h1{
+    font-size: 1.6em;
     color: var(--color-blue);
     font-family: Montserrat;
-    font-size: 3em;
 }
 
 h2, h3, h4, h5, h6{
+  font-size: 1.7em;
     font-family: 'Josefin Slab';
     color:var(--color-green);
 
@@ -29,8 +35,7 @@ h2, h3, h4, h5, h6{
 p{
     
     font-family: Maitree;
-    font-size: 18px;
-   
+    font-size: 2em;
 }
 
   h1, h2, h3, h4, h5, h6 {
@@ -41,7 +46,6 @@ p{
   a {
     color: var(--color-green);
   }
-
 
 
 @font-face {

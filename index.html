@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>My Website</title>
+	<title>PEPTI ART FILE</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -9,55 +9,82 @@
 	    <link rel="stylesheet" href="css/new-style.css" />
 
 -->	
-
-<link id="theme" rel="stylesheet" 
+	<link id="theme" rel="stylesheet" 
 	type="text/css" href="css/style.css" />
+	<link id="button" rel="stylesheet" type="text/css" href='css/button.css'>
 
     <title>PEPTI ART FILE</title>
 
 	<style>
+		/* hide show style */
+		.hide {
+  display: block;
+  color: #666;
+}
+.myDIV{
+	display: block;
+	padding: 20px;
+	width:100%;
+	position: relative;
+	text-align: right;
+	color:var(--color-red);
+	
+}
+.myDIV:hover + .hide {
+  display: none;
+}
 		
 	</style>
 	<script>
-        function toggleTheme() {
-            // Obtains an array of all <link>
-            // elements.
-            // Select your element using indexing.
-            var theme = document.getElementsByTagName('link')[0];
+        function toggleTheme(value) {
   
-            // Change the value of href attribute 
-            // to change the css sheet.
-            if (theme.getAttribute('href') == 'css/new-style.css') {
-                theme.setAttribute('href', 'css/style.css');
-            } else {
-                theme.setAttribute('href', 'css/new-style.css');
-            }
+            // Obtain the name of stylesheet 
+            // as a parameter and set it 
+            // using href attribute.
+            var sheets = document
+                .getElementsByTagName('link');
+  
+            sheets[0].href = value;
         }
     </script>
 </head>
 <body>
 	<header>
-		
-		
-		<button onclick="toggleTheme()">Switch</button>
-		<nav>
+		<div class="myDIV">...</div>
+		<div class="hide">
+		<nav >
+			<button class='button-24' onclick="toggleTheme('css/style.css')">AI Design</button>
+		<button class='button-24'onclick="toggleTheme('css/flex.css')">Flex Design White</button>
+			<button class='button-24' onclick="toggleTheme('css/new-style.css')">
+				Not Flex White
+		</button>
+		</nav>
+	</div>
+		<!--
+			<nav>
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
+		-->
 	</header>
 
     <img src="images/white-pepti-logo.png" width='100%' alt="PEPTI">
 
 	<main>
-		<h1>PEPTI</h1>
+		<section class="lead-section">
+			<h1>PEPTI</h1>
 		<h2>Embedded Instruction for Early Learning</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla malesuada volutpat. Suspendisse potenti. Fusce at dolor eget ipsum eleifend bibendum sit amet sit amet mi. Vestibulum tristique, velit quis aliquet tempus, ipsum nunc euismod mi, ac malesuada elit libero sed risus.</p>
+		</section>
 
-		<h3>Early Learning</h3>
+		<section class="second-section">
+			<h3>Early Learning</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla malesuada volutpat. Suspendisse potenti. Fusce at dolor eget ipsum eleifend bibendum sit amet sit amet mi. Vestibulum tristique, velit quis aliquet tempus, ipsum nunc euismod mi, ac malesuada elit libero sed risus.</p>
+			
+		</section>
 	</main>
 
 	<footer>
