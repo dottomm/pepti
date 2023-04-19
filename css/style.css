@@ -1,12 +1,39 @@
+/* Define the color variables */
+:root {
+    --color-pale-orange: #FFDDC6;
+    --color-orange: #F39C12;
+    --color-dark-grey: #333333;
+    --color-pale-blue: #A8DADC;
+    --color-off-white: #F1FAEE;
+  }
+  
+  /* Use the colors in your CSS */
+  body {
+    background-color: var(--color-pale-orange);
+    color: var(--color-dark-grey);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-orange);
+  }
+  
+  a {
+    color: var(--color-pale-blue);
+  }
+  
+  /* Add a splash of the off-white color */
+  .container {
+    background-color: var(--color-off-white);
+  }
+
 body {
-    background-color: #ffddb3;
-    color: #333333;
+    
     margin: 40px
 auto;
 max-width: 650px;
 line-height: 1.6;
 font-size: 18px;
-color: #444;
+
 padding: 0
 10px
 }
@@ -26,7 +53,7 @@ padding: 0
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #f39c12;
+  
 line-height: 1.2
 
 }
@@ -42,14 +69,3 @@ p{
     font-family: Maitree;
 }
 
-a {
-    color: #a8dadc;
-    text-decoration: none;
-    border-bottom: 2px solid #a8dadc;
-    transition: all 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #f39c12;
-    border-bottom: 2px solid #f39c12;
-}       
