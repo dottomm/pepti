@@ -1,7 +1,11 @@
 :root {
+  --color-white: #fcfcfc;
+--color-blue: #6ec5e0;
+--color-blue-green:#8fc8b6;
+--color-greener: #b0cc8c;
+--color-olive:#d1d063;
     --color-green: #D3D26A;
     --color-blue: #AEDDEC;
-    --color-white: #FCFCFC;
     
   }
   
@@ -15,7 +19,7 @@
   }
   .img-box{
     width:880px;
-    height:400px;
+    height:300px;
     background-image: url('../images/white-pepti-logo.png'); 
     background-size:contain;
     background-repeat: no-repeat;
