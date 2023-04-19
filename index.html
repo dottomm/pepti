@@ -14,12 +14,25 @@
 	<link id="button" rel="stylesheet" type="text/css" href='css/button.css'>
 
     <title>PEPTI ART FILE</title>
-
+<script>
+	window.onload = function() {
+  document.getElementById('myDIV').style.display = 'none';
+};
+	function myFunction() {
+		
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 	<style>
 		/* hide show style */
 		.hide {
-  display: block;
-  color: #666;
+		display: block;
+		color: #666;
 }
 .myDIV{
 	display: block;
@@ -33,7 +46,11 @@
 .myDIV:hover + .hide {
   display: none;
 }
-		
+.accent{
+text-align: left;
+	color:red;
+
+}
 	</style>
 	<script>
         function toggleTheme(value) {
@@ -50,8 +67,8 @@
 </head>
 <body>
 	<header>
-		<div class="myDIV">...</div>
-		<div class="hide">
+		
+		<div class="myDIV" id="myDIV">
 		<nav >
 			<button class='button-24' onclick="toggleTheme('css/style.css')">AI Design</button>
 		<button class='button-24'onclick="toggleTheme('css/flex.css')">Flex Design White</button>
@@ -59,7 +76,9 @@
 				Not Flex White
 		</button>
 		</nav>
+		
 	</div>
+
 		<!--
 			<nav>
 			<ul>
@@ -69,11 +88,14 @@
 			</ul>
 		</nav>
 		-->
+
 	</header>
 
     <!--
 		<img src="images/white-pepti-logo.png" width='100%' alt="PEPTI">
 	-->
+	<div class='accent'><a href="#"  onclick="myFunction()">...</a></div>		
+
 <div class="img-box"></div>
 	<main>
 		<section class="lead-section">
@@ -91,6 +113,7 @@
 
 	<footer>
 		<p>&copy; 2023 PEPTI. All rights reserved.</p>
+
 	</footer>
 </body>
 </html>
