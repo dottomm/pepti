@@ -14,10 +14,28 @@
   body {
     background-color: var(--color-navy-blue);
   color: var(--color-yellow);
+  margin: 40px auto;
+max-width: 880px;
+  line-height: 1.6;
+  font-size: 18px;
+  padding: 0 10px
   }
   
+  h1{
+    font-family: Montserrat;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Josefin Slab';
+}
+
+p{
+    font-family: Maitree;
+}
+
   h1, h2, h3, h4, h5, h6 {
     color: var(--color-yellow-orange);
+    line-height: 1.2
   }
   
   a {
@@ -26,20 +44,10 @@
   
   /* Add a splash of the off-white color */
   .container {
-    background-color: var(--color-red);
+    padding:40px;
   }
 
-body {
-    
-    margin: 40px
-auto;
-max-width: 650px;
-line-height: 1.6;
-font-size: 18px;
 
-padding: 0
-10px
-}
 @font-face {
     font-family: Montserrat;
     src: url('../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
@@ -55,20 +63,5 @@ padding: 0
     src: url('../fonts/Maitree/Maitree-Regular.ttf');
 }
 
-h1, h2, h3, h4, h5, h6 {
-  
-line-height: 1.2
 
-}
-h1{
-    font-family: Montserrat;
-}
-
-h2, h3, h4, h5, h6{
-    font-family: 'Josefin Slab';
-}
-
-p{
-    font-family: Maitree;
-}
 
