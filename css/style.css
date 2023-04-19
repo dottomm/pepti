@@ -1,29 +1,32 @@
 /* Define the color variables */
 :root {
-    --color-pale-orange: #FFDDC6;
-    --color-orange: #F39C12;
-    --color-dark-grey: #333333;
-    --color-pale-blue: #A8DADC;
-    --color-off-white: #F1FAEE;
+    --color-red: #F94144;
+    --color-orange: #F3722C;
+    --color-yellow-orange: #F8961E;
+    --color-yellow: #F9C74F;
+    --color-green: #90BE6D;
+    --color-blue-green: #43AA8B;
+    --color-blue-grey: #577590;
+    --color-navy-blue: #1D3557;
   }
   
   /* Use the colors in your CSS */
   body {
-    background-color: var(--color-pale-orange);
-    color: var(--color-dark-grey);
+    background-color: var(--color-navy-blue);
+  color: var(--color-yellow);
   }
   
   h1, h2, h3, h4, h5, h6 {
-    color: var(--color-orange);
+    color: var(--color-yellow-orange);
   }
   
   a {
-    color: var(--color-pale-blue);
+    color: var(--color-blue-green);
   }
   
   /* Add a splash of the off-white color */
   .container {
-    background-color: var(--color-off-white);
+    background-color: var(--color-red);
   }
 
 body {
